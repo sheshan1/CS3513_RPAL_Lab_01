@@ -1,0 +1,9 @@
+let Check = 
+	fn x. x ls 0 -> 'Negative' 
+	| x eq 0 -> 'Neither Positive or Negaive. It is Zero!' 
+	| 'Positive' 
+in 
+Print(Check (-6))
+//prints 'Negative'
+
+

@@ -1,0 +1,13 @@
+let rec Reverse n m =
+	(n - (n/10)*10) eq 0 -> m |  Reverse (n/10) (m*10 + n - (n/10)*10) 
+in
+let Is_palindrome x T = 
+	(x eq Reverse x 0) -> (T aug x) | T 
+in
+let rec Next_number s e T = 
+	s eq e -> T | Next_number (s+1) e (Is_palindrome s T) 
+in
+let Range s e = 
+	Next_number s e nil
+in print(Range 20 150)
+//Prints (22, 33, 44, 55, 66, 77, 88, 99, 111, 121, 131, 141)

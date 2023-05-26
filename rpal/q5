@@ -1,0 +1,8 @@
+let rec Convert s =  
+	s eq '' -> '' | Conc (Convert (Stern s)) (Stem s)
+within
+Is_palindrome s = 
+	not Isstring s-> 'error'| s eq Convert s
+in 
+Print (Is_palindrome '123321')
+//Prints true

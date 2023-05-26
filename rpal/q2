@@ -1,0 +1,7 @@
+let Max x y = 
+	x ls y -> y | x 
+in 
+Print ((-12) @Max 46 @Max 3)
+//Prints 46
+
+

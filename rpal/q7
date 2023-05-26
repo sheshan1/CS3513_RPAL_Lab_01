@@ -1,0 +1,6 @@
+let Check n = 
+	n eq (n/2) * 2 -> 'Even' | 'Odd' 
+in 
+Print(Check(6))
+//Prints 'Even'
+
